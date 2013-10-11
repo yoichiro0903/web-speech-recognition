@@ -3,3 +3,13 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+    
+  h1#hoge Please speak 
+  
+  input#message(type="text", name="message", x-webkit-speech, onwebkitspeechchange="$.translate();")
+
+
+  div#translate
+    h1 Translate
+    p#result
+    
