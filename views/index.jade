@@ -6,8 +6,7 @@ block content
     
   h1#hoge Please speak 
   
-  input#message(type="text", name="message", x-webkit-speech, onwebkitspeechchange="$.translate();")
-
+  input#message(type="text", name="message", x-webkit-speech, onwebkitspeechchange="$.translate();", onchange="$.translate();")
 
   div#translate
     h1 Translate
