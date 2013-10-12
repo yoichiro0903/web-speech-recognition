@@ -28,11 +28,14 @@ exports.translate = function(req, res){
 
       word = word.replace(/わたし|私/g, 'うち');
       word = word.replace(/ぼく|僕|オレ|俺|おれ/g, 'わて');
+      word = word.replace(/あなた|きみ/g, 'あんさん');
+      word = word.replace(/君/g, 'はん');
       word = word.replace(/本当/g, 'ほんま');
       word = word.replace(/違う/g, 'ちゃう');
       word = word.replace(/です/g, 'でおまんがな');
-      word = word.replace(/じゃん/g, 'やん');
+      word = word.replace(/じゃ/g, 'や');
       word = word.replace(/じゃあ/g, 'ほな');
+      word = word.replace(/だ/g, 'や');
       result = result + word;
     }
 
