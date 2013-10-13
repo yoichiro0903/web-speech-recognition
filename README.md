@@ -11,8 +11,8 @@ Node Dengana
 まず、Node.jsをインストールしていることが前提です。
 
 ```
-git clone git@github.com:ryooopan/dengana.git
-cd dengana
+git clone git@github.com:ryooopan/node-dengana.git
+cd node-dengana
 npm install
 ```
 
