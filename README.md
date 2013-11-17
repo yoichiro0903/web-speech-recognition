@@ -46,3 +46,9 @@ brew install mecab-ipadic
 ```
 
 
+=======
+web-speech-recognition
+======================
+
+modified node-dengana 
+
