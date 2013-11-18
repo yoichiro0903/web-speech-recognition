@@ -1,7 +1,6 @@
 
 /**
  * Module dependencies.
- modify for me
  */
 
 var express = require('express')
@@ -23,14 +22,17 @@ app.use(express.methodOverride());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+//http request method 
 app.get('/', routes.index);
 app.get('/users', user.list);
-app.post('/translate', routes.translate);
+//app.post('/translate', routes.translate);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

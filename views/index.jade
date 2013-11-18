@@ -4,11 +4,17 @@ block content
   h1= title
   p Welcome to #{title}
     
+  textarea#utterance
+  br
+  input#tts_button(type="button", value="speakup")
+  div#audio_div
+  div#url
+
   h1#hoge Please speak 
   
-  input#message(type="text", name="message", x-webkit-speech, onwebkitspeechchange="$.translate();", onchange="$.translate();")
+  input#message(type="text", name="message", x-webkit-speech, onwebkitspeechchange="$.translate();", onchange="$.translate();")  
 
   div#translate
     h1 Translate
     p#result
-    
+

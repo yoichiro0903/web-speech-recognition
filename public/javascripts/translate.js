@@ -3,23 +3,26 @@ recognition.onresult = function(event) {
   console.log(event);
 }
 
+
 $.translate = function() {
   var message = $('#message').val();
+  $('#translate #result').text(message);
 
-  var ajax = $.ajax({
-    url: '/translate',
-    type: 'POST',
-    dataType: 'json',
-    data: {
-      message: message
-    }
-  });
+
+  // var ajax = $.ajax({
+  //   url: '/translate',
+  //   type: 'POST',
+  //   dataType: 'json',
+  //   data: {
+  //     message: message
+  //   }
+  // });
   
-  ajax.always( function(data) {
-    console.log(data);
-    var result = data.result;
-    $('#translate #result').html(result);
-  });
+  // ajax.always( function(data) {
+  //   console.log(data);
+  //   var result = data.result;
+  //   $('#translate #result').html(result);
+  // });
 
 }
 
