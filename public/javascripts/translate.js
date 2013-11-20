@@ -3,6 +3,7 @@ recognition.onresult = function(event) {
   console.log(event);
 }
 
+//
 
 $.translate = function() {
   var message = $('#message').val();
