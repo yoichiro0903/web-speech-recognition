@@ -3,7 +3,8 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
-    
+  video#inputVideo  
+  canvas#drawCanvas(width="400", height="300")
   textarea#utterance
   br
   input#tts_button(type="button", value="speakup")
@@ -17,4 +18,5 @@ block content
   div#translate
     h1 Translate
     p#result
+    p#positions
 
